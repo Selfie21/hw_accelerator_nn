@@ -1,0 +1,37 @@
+Fragen:
+Genauere Umsetzung anhand 
+HW Beschleuniger sind optimiert für alle Anwendungen im Bereich Machine Learning (Neuronale Netze sind ja nur ein Teil davon) wie weit soll ich darauf eingehen, da mein Thema ja speziell für Neuronale Netze ist?
+
+
+Idee Struktur:
+
+~(Ganz kurz) Was sind Hardware Beschleuniger. Custom Designed ASICs. Aktuelles Thema, viel Forschung.
+~Was machen HW Beschleuniger im Bereich NN anders im Vergleich zu "normaler" Hardware bspw. guter Durchsatz 8-bit Arithmetik, optimisierte Speichernutzung, ...
+~(GPUs ähnlichkeiten zu HW Beschleunigern für Neuronale Netze -> HW Beschleuniger bis zu Faktor 10 schneller)
+~Vergleich:
+	- Google TPU Tensor Processing Units, Edge TPU -> gedacht für Edge Computing
+		-> auf Tensorflow Software eingehen (obwohl nicht genaues Thema), da speziell für Tensorflow gemacht.
+	- Amazon, Intel, IBM
+	- andere Typen?
+~Outlook, neuere Methoden usw.
+
+
+
+Wichtige Paper:
+~History FPGAS: https://arxiv.org/pdf/1602.04283.pdf
+~Comparison Hardware Accelerators: https://www.mdpi.com/1999-5903/12/7/113/pdf
+~Performance analysis Google TPU: https://dl.acm.org/doi/pdf/10.1145/3079856.3080246
+~Microsoft FPGAS: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supplemental/15%20DCNN%20hardware.pdf
+~Acceleration DCNN: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supplemental/15%20DCNN%20hardware.pdf
+~Design HW Accelerator: https://www.cs.utah.edu/~rajeev/pubs/ali-thesis.pdf
+
+Wie wird HW schneller:
+(Comparison GPUS, CPUS, ASICs and FPGA: https://ieeexplore.ieee.org/document/7577314/)
+Limited Numerical Precision: http://proceedings.mlr.press/v37/gupta15.pdf
+In-Memory Computation: https://arxiv.org/pdf/1706.00511.pdf ; https://arxiv.org/pdf/1801.06228.pdf ; https://www.nature.com/articles/s41586-020-2861-0.pdf
+
+Weitere Themen:
+Performance Analysis: https://arxiv.org/pdf/1704.04760.pdf
+Efficient Processing of Deep Neural Networks: https://ieeexplore.ieee.org/document/8114708
+Graph NN: https://ieeexplore.ieee.org/document/9218751
+Hardware Acceleration of Bayesian Neural Networks: https://dl.acm.org/doi/pdf/10.1145/3296957.3173212
