@@ -18,20 +18,24 @@ Idee Struktur:
 
 
 Wichtige Paper:
-~History FPGAS: https://arxiv.org/pdf/1602.04283.pdf
-~Comparison Hardware Accelerators: https://www.mdpi.com/1999-5903/12/7/113/pdf
-~Performance analysis Google TPU: https://dl.acm.org/doi/pdf/10.1145/3079856.3080246
-~Microsoft FPGAS: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supplemental/15%20DCNN%20hardware.pdf
-~Acceleration DCNN: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supplemental/15%20DCNN%20hardware.pdf
-~Design HW Accelerator: https://www.cs.utah.edu/~rajeev/pubs/ali-thesis.pdf
+o1~History FPGAS: https://arxiv.org/pdf/1602.04283.pdf
+2~Comparison Hardware Accelerators: https://www.mdpi.com/1999-5903/12/7/113/pdf
+3~Performance analysis Google TPU: https://dl.acm.org/doi/pdf/10.1145/3079856.3080246
+4~Microsoft FPGAS: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supplemental/15%20DCNN%20hardware.pdf
+5~Acceleration DCNN: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supplemental/15%20DCNN%20hardware.pdf
+6~Design HW Accelerator: https://www.cs.utah.edu/~rajeev/pubs/ali-thesis.pdf
+7~Microsoft Comparison: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supplemental/15%20DCNN%20hardware.pdf
 
 Wie wird HW schneller:
-(Comparison GPUS, CPUS, ASICs and FPGA: https://ieeexplore.ieee.org/document/7577314/)
-Limited Numerical Precision: http://proceedings.mlr.press/v37/gupta15.pdf
-In-Memory Computation: https://arxiv.org/pdf/1706.00511.pdf ; https://arxiv.org/pdf/1801.06228.pdf ; https://www.nature.com/articles/s41586-020-2861-0.pdf
+o8-(Comparison GPUS, CPUS, ASICs and FPGA: https://ieeexplore.ieee.org/document/7577314/)
+9-Limited Numerical Precision: http://proceedings.mlr.press/v37/gupta15.pdf
+10-In-Memory Computation: https://arxiv.org/pdf/1706.00511.pdf ; https://arxiv.org/pdf/1801.06228.pdf ; https://www.nature.com/articles/s41586-020-2861-0.pdf
 
 Weitere Themen:
-Performance Analysis: https://arxiv.org/pdf/1704.04760.pdf
-Efficient Processing of Deep Neural Networks: https://ieeexplore.ieee.org/document/8114708
-Graph NN: https://ieeexplore.ieee.org/document/9218751
-Hardware Acceleration of Bayesian Neural Networks: https://dl.acm.org/doi/pdf/10.1145/3296957.3173212
+11-Performance Analysis: https://arxiv.org/pdf/1704.04760.pdf
+12-Efficient Processing of Deep Neural Networks: https://ieeexplore.ieee.org/document/8114708
+
+General:
+o13-Difference AI: https://www.ibm.com/cloud/blog/ai-vs-machine-learning-vs-deep-learning-vs-neural-networks
+o14- FPGAs ALL stuff: https://arxiv.org/pdf/1712.08934.pdf
+o15- Performance 760 GOP/s https://www.researchgate.net/publication/333158297_High-Performance_FPGA-Based_CNN_Accelerator_With_Block-Floating-Point_Arithmetic
