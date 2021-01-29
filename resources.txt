@@ -1,8 +1,3 @@
-Fragen:
-Genauere Umsetzung anhand 
-HW Beschleuniger sind optimiert für alle Anwendungen im Bereich Machine Learning (Neuronale Netze sind ja nur ein Teil davon) wie weit soll ich darauf eingehen, da mein Thema ja speziell für Neuronale Netze ist?
-
-
 Idee Struktur:
 
 ~(Ganz kurz) Was sind Hardware Beschleuniger. Custom Designed ASICs. Aktuelles Thema, viel Forschung.
@@ -18,24 +13,33 @@ Idee Struktur:
 
 
 Wichtige Paper:
-o1~History FPGAS: https://arxiv.org/pdf/1602.04283.pdf
-2~Comparison Hardware Accelerators: https://www.mdpi.com/1999-5903/12/7/113/pdf
-3~Performance analysis Google TPU: https://dl.acm.org/doi/pdf/10.1145/3079856.3080246
-4~Microsoft FPGAS: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supplemental/15%20DCNN%20hardware.pdf
-5~Acceleration DCNN: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supplemental/15%20DCNN%20hardware.pdf
-6~Design HW Accelerator: https://www.cs.utah.edu/~rajeev/pubs/ali-thesis.pdf
-7~Microsoft Comparison: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supplemental/15%20DCNN%20hardware.pdf
+o1~ History FPGAS: https://arxiv.org/pdf/1602.04283.pdf
+o2~ Comparison Hardware Accelerators: https://www.mdpi.com/1999-5903/12/7/113/pdf
+o3~ Performance analysis Google TPU: https://dl.acm.org/doi/pdf/10.1145/3079856.3080246
+o4~ Microsoft FPGAS: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supplemental/15%20DCNN%20hardware.pdf
+o5~ Comparison GPUS, CPUS, ASICs and FPGA: https://ieeexplore.ieee.org/document/7577314/)
+o6~ Survey GPU, CPU, ASICs, TPU: https://www.researchgate.net/publication/334647302_A_Survey_on_Specialised_Hardware_for_Machine_Learning
+o7~ Percentage Usage All Categories: https://link.springer.com/article/10.1007/s11227-020-03325-8
+8~ Other: https://scholar.google.com/scholar?hl=de&as_sdt=0,5&q=hardware+design+for+machine+learning
 
+[
 Wie wird HW schneller:
-o8-(Comparison GPUS, CPUS, ASICs and FPGA: https://ieeexplore.ieee.org/document/7577314/)
-9-Limited Numerical Precision: http://proceedings.mlr.press/v37/gupta15.pdf
-10-In-Memory Computation: https://arxiv.org/pdf/1706.00511.pdf ; https://arxiv.org/pdf/1801.06228.pdf ; https://www.nature.com/articles/s41586-020-2861-0.pdf
-
-Weitere Themen:
-11-Performance Analysis: https://arxiv.org/pdf/1704.04760.pdf
-12-Efficient Processing of Deep Neural Networks: https://ieeexplore.ieee.org/document/8114708
+7-Limited Numerical Precision: http://proceedings.mlr.press/v37/gupta15.pdf
+8-In-Memory Computation: https://arxiv.org/pdf/1706.00511.pdf
+9-Efficient Processing of Deep Neural Networks: https://ieeexplore.ieee.org/document/8114708
+]
 
 General:
-o13-Difference AI: https://www.ibm.com/cloud/blog/ai-vs-machine-learning-vs-deep-learning-vs-neural-networks
-o14- FPGAs ALL stuff: https://arxiv.org/pdf/1712.08934.pdf
-o15- Performance 760 GOP/s https://www.researchgate.net/publication/333158297_High-Performance_FPGA-Based_CNN_Accelerator_With_Block-Floating-Point_Arithmetic
+o11- Difference AI: https://www.ibm.com/cloud/blog/ai-vs-machine-learning-vs-deep-learning-vs-neural-networks
+o12- FPGAs ALL stuff: https://arxiv.org/pdf/1712.08934.pdf
+o13- Performance 760 GOP/s https://www.researchgate.net/publication/333158297_High-Performance_FPGA-Based_CNN_Accelerator_With_Block-Floating-Point_Arithmetic
+o14- Rise of Neural Networks Computer Power: Aggarwal, Charu C. "Neural networks and deep learning." Springer 10 (2018): 978-3. P.7
+o15- TPU v3 Stats on Google: 420 Teraflops,  https://arxiv.org/pdf/1907.10701.pdf, https://cloud.google.com/tpu/docs/system-architecture
+o16- Alpha Go used TPU: https://www.nature.com/articles/nature24270?sf123103138=1
+o17- Design HW Accelerator: https://www.cs.utah.edu/~rajeev/pubs/ali-thesis.pdf
+o18- Google Summary: https://www.heise.de/newsticker/meldung/Kuenstliche-Intelligenz-Architektur-und-Performance-von-Googles-KI-Chip-TPU-3676312.html
+
+Fragen Google Biased Paper selber geschrieben?
+Sources von Sources verwenden?
+
+
