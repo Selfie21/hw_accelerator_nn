@@ -20,7 +20,7 @@ o4~ Microsoft FPGAS: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supp
 o5~ Comparison GPUS, CPUS, ASICs and FPGA: https://ieeexplore.ieee.org/document/7577314/)
 o6~ Survey GPU, CPU, ASICs, TPU: https://www.researchgate.net/publication/334647302_A_Survey_on_Specialised_Hardware_for_Machine_Learning
 o7~ Percentage Usage All Categories: https://link.springer.com/article/10.1007/s11227-020-03325-8
-8~ Other: https://scholar.google.com/scholar?hl=de&as_sdt=0,5&q=hardware+design+for+machine+learning
+o8~ Other: https://scholar.google.com/scholar?hl=de&as_sdt=0,5&q=hardware+design+for+machine+learning
 
 [
 Wie wird HW schneller:
@@ -38,6 +38,13 @@ o15- TPU v3 Stats on Google: 420 Teraflops,  https://arxiv.org/pdf/1907.10701.pd
 o16- Alpha Go used TPU: https://www.nature.com/articles/nature24270?sf123103138=1
 o17- Design HW Accelerator: https://www.cs.utah.edu/~rajeev/pubs/ali-thesis.pdf
 o18- Google Summary: https://www.heise.de/newsticker/meldung/Kuenstliche-Intelligenz-Architektur-und-Performance-von-Googles-KI-Chip-TPU-3676312.html
+o19- Training AI used NVIDIA: https://www.forbes.com/sites/moorinsights/2017/03/03/a-machine-learning-landscape-where-amd-intel-nvidia-qualcomm-and-xilinx-ai-engines-live/?sh=51f4c788742f
+o20- Most used GPU for Training: https://www.wired.com/2016/10/ai-changing-market-computer-chips/
+
+
+Pictures:
+Google TPU v3: https://cloud.google.com/tpu/
+
 
 Fragen Google Biased Paper selber geschrieben?
 Sources von Sources verwenden?
