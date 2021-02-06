@@ -5,11 +5,12 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 
-\usepackage{notoccite}
 \usepackage[numbers]{natbib}
+\usepackage{hyperref}
 \usepackage{url}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\bibliographystyle{ieeetr}
 
 
 \begin{document}
@@ -31,7 +32,7 @@ The availability of efficient hardware was one of the key factors, which lead to
 \section{Introduction}
 Artifical Neural Networks (more often Neural Networks) are one of the most promising technologies in the current era of computer science. Neural Networks can be deployed in an enourmous variety of categories and have shown major improvements in these categories, most prominently in Speech and Image Recognition \cite{speech_recognition1} that exceeded prior methods. The field of Artifical Intelligence covers a wide variety of concepts. This paper will mainly cover the subcategory of Deep Learning, more specifically Neural Networks, which falls under the category of Machine Learning. 
 \\
-Neural Networks are at it's core a very broad simplification of the biological brain consisting of many interconnected neurons, called nodes in Neural Networks. The nodes in a Neural Network are  arranged in different layers. Each node passes on a weighted value to a node in the next layer. If this value is above a certain threshhold the node will be activated. By changing the weights of each node a learning process similiar to that of their biological counterpart is simulated \cite{nn_basics}.
+Neural Networks are at it's core a very broad simplification of the biological brain consisting of many interconnected neurons, called nodes in Neural Networks. The nodes in a Neural Network are  arranged in different layers. Each node passes on a weighted function to a node in the next layer. If this value is above a certain threshhold the node will be activated. By changing the weights of each node a learning process similiar to that of their biological counterpart is simulated \cite{nn_basics}.
 \begin{figure}[h]
 	\caption{Typical representation of a Neural Network}
 	\centering
@@ -50,7 +51,7 @@ Furthermore  dimension of the input data plays a key role in the amount of compu
 \\
 Hardware Accelerators for Neural Networks can be divided into 4 main classes: CPUs, GPUs, FPGAs and ASICs. The focus can be placed on the latter 3 since CPUs mostly fall short in terms of computational power for Neural Networks. 
 CPUs are needed for a wide variety of tasks requiring a flexible system to execute instructions. As a result a CPU is good at executing serial instructions in parallel, resulting in a good general parallelization.
-Both of the points mentioned above, that are needed for the specialised hardware for Neural Networks, are not met for CPUs. They are limited by their small amount of cores hindering the ability to parallelize the same instruction. Moreover a CPU usually works by fetching an instruction and executing it making the training and inference phase slow \cite{capra2020updated}. While working on Neural Networks CPUs are accompanied by Underutilization, achieving factors of less than 1/10 of that other alternatives \cite{nurvitadhi2016accelerating}.
+Both of the points mentioned above, that are needed for the specialised hardware for Neural Networks, are not met for CPUs. They are limited by their small amount of cores hindering the ability to parallelize the same instruction. Moreover a CPU usually works by fetching an instruction and executing it making the training and inference phase slow \cite{capra2020updated}. While working on Neural Networks CPUs are accompanied by Underutilization, achieving factors of less than 1/10 of that other alternatives \cite{nurvitadhi2016accelerating}. Nonetheless Intel is working on accelerating CPUs producing librarys for their Intel Xeon Processor \cite{intelnn}.
 \\
 
 \section{Graphics Processing Unit}
@@ -60,6 +61,5 @@ Both of the points mentioned above, that are needed for the specialised hardware
 \quad
 \newpage
 
-\bibliographystyle{ieeetr}
 \bibliography{References}
 \end{document}
