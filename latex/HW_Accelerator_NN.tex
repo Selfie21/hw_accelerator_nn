@@ -24,31 +24,28 @@
 \begin{abstract}
 This will be my Abstract in \LaTeX.
 I am going to write this when I have almost finished the essay since it will probably be easier to give an overview over the topic once the full paper is finished.
+The availability of efficient hardware was one of the key factors, which lead to the rise of Neural Network \cite{historyfpgas}. 
 \end{abstract}
 
 \section{Introduction}
 Artifical Neural Networks (more often Neural Networks) are one of the most promising technologies in the current era of computer science. Neural Networks can be deployed in an enourmous variety of categories and have shown major improvements in these categories, most prominently in Speech and Image Recognition \cite{speech_recognition1} that exceeded prior methods. The field of Artifical Intelligence covers a wide variety of concepts. This paper will mainly cover the subcategory of Deep Learning, more specifically Neural Networks, which falls under the category of Machine Learning. 
 \\
+\\
 Neural Networks are at it's core a very broad simplification of the biological brain consisting of many interconnected neurons, called nodes in Neural Networks. The nodes in a Neural Network are  arranged in different layers. Each node passes on a weighted value to a node in the next layer. If this value is above a certain threshhold the node will be activated. By changing the weights of each node a learning process similiar to that of their biological counterpart is simulated \cite{nn_basics}.
-
 %insert Picture of Neural Network. Show weights on synapses
-
 The development of a Neural Network consists of two different stages. A training phase where the Neural Network gets an input and compares the resulting output with that of a real-world dataset. The error can then be incorparated into the network by changing the weights, also called backpropagation. Secondly an inference phase, where the network get's an input and makes a prediction. As seen in Fig 2. the Neural Network has a larger computational effort in the training phase.
 %insert Picture of Phases
 \\
-
-With some Neural Networks having over 150 layers \cite{densely_network} up to billions of multiply operations can take place in a single neural network. The vast amount of computational power training and using neural network lead to the need for specialised hardware. The availability of efficient hardware is one of the key factors, which made neural networks usable \cite{historyfpgas}.
-
-  
-
+\\
+With some Neural Networks having over 150 layers \cite{densely_network} up to billions of multiply operations can take place in a single Neural Network. The vast amount of computational power needed for training and using neural network lead to the need for specialised hardware, which contributed much to the success seen in modern day implementations. The research on hardware is still ongoing and is one of the most important topics in achieving better and faster results for Neural Networks. As a result of the timeliness of the topic this survey will cover only a status quo of the current Hardware.
 
 \section{Different Types of Hardware}
-CPU is not relevant.
+Hardware Accelerators for Neural Networks can be divided into 4 main classes: CPUs, GPUs, FPGAs and ASICs. CPUs are
 
 \newpage
 \quad
 \newpage
 
-\bibliographystyle{abbrvnat}
+\bibliographystyle{ieeetr}
 \bibliography{References}
 \end{document}
