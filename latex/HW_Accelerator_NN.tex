@@ -47,14 +47,27 @@ With some Neural Networks having over 150 layers \cite{densely_network} up to bi
 
 \section{Different Types of Hardware}
 Most of Computations needed for inference and training include Matrix-Vector Products, caused by the input data being run through the network.
-Furthermore  dimension of the input data plays a key role in the amount of computation needed. A single image can have 1000 pixels resulting in 1000 different data points that the Neural Network has to compute. To efficiently compute the vast amount of data fast memory accesses or inplace computations of the values is needed. Since these Calculations need to be done for the number of nodes good parallelization is needed to efficiently run Neural Networks.
+Furthermore  the dimension of the input data plays a key role in the amount of computation needed. Lets say a single image has 1000 pixels resulting in 1000 different data points that the Neural Network has to compute. To efficiently compute the vast amount of data fast memory accesses or inplace computations of the values is needed. Since these Calculations need to be done for the number of nodes good parallelization is needed to efficiently run Neural Networks.
 \\
 Hardware Accelerators for Neural Networks can be divided into 4 main classes: CPUs, GPUs, FPGAs and ASICs. The focus can be placed on the latter 3 since CPUs mostly fall short in terms of computational power for Neural Networks. 
 CPUs are needed for a wide variety of tasks requiring a flexible system to execute instructions. As a result a CPU is good at executing serial instructions in parallel, resulting in a good general parallelization.
 Both of the points mentioned above, that are needed for the specialised hardware for Neural Networks, are not met for CPUs. They are limited by their small amount of cores hindering the ability to parallelize the same instruction. Moreover a CPU usually works by fetching an instruction and executing it making the training and inference phase slow \cite{capra2020updated}. While working on Neural Networks CPUs are accompanied by Underutilization, achieving factors of less than 1/10 of that other alternatives \cite{nurvitadhi2016accelerating}. Nonetheless Intel is working on accelerating CPUs producing librarys for their Intel Xeon Processor \cite{intelnn}.
 \\
+Another point to consider is the different requirements needed for both the training and inference phase. During the inference phase certain approximasations can be made to achieve faster results, which can't be made for the training phase. This derives in some Hardware only being designed for the inference phase. 
 
 \section{Graphics Processing Unit}
+The Graphics Processing Unit (GPU) is a piece of specialised Hardware originally designed for the rendering of images in a Computer. The rendering process requires vast amounts of floating point operations resulting in the GPU having hundreds of cores with many individual caches to store the computation. To add on the GPU has more units dedicated to floating-point operations. This makes the GPU an excellent tool for working with Neural Networks since the their specifications align with those for rendering Graphics. With over thousands cores the GPU can parallelize the matrix multiplications needed for training and achieve fast training times. 
+\begin{figure}[h]
+	\caption{Differt Layouts comparing CPU and GPU: The GPU has more cores with more individual Caches \cite{intelpic_comparison}}
+	\centering
+	\includegraphics[width=\linewidth]{pictures/intel_comparison.png}
+\end{figure}
+
+Through this structure high memory throughput and good Execution of parallel instructions is given. Nvidia ,one of the leaders in manufactoring, is implementing the their specialised Deep Learning Units with normal cores plus additional Tensor cores \cite{nvidiav100}. Tensor Cores essentiely multiply 2 FP-16 Matrix (Floating Point 16 bit) and being able to add a third Matrix all in a single operation, performing 64 operations per clock \cite{tensorcores}. Their newest product the Nvidia A100 uses the third generation of tensor cores with better precision.
+Another way GPUs accelerate is by making use of the sparsity of matrices used for calculating the different functions, more on that later.
+GPUs can be seen as the most used hardware option for neural networks for general scientific usage \cite{mostusedgpu}. They are mostly used for training, but can also be used for the inference phase because of their flexible hardware structure \cite{capra2020updated}. They are specifically fast in training due to their ability to work through large amounts of data quickly (having a high memory bandwidth).
+
+\section{Field-programmable Gate Array}
 
 
 \newpage

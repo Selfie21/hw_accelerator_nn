@@ -20,7 +20,7 @@ o4~ Microsoft FPGAS: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supp
 o5~ Comparison GPUS, CPUS, ASICs and FPGA: https://ieeexplore.ieee.org/document/7577314/)
 o6~ Survey GPU, CPU, ASICs, TPU: https://www.researchgate.net/publication/334647302_A_Survey_on_Specialised_Hardware_for_Machine_Learning
 o7~ Percentage Usage All Categories: https://link.springer.com/article/10.1007/s11227-020-03325-8
-o8~ Other: https://scholar.google.com/scholar?hl=de&as_sdt=0,5&q=hardware+design+for+machine+learning
+o8~ Other: https://d1wqtxts1xzle7.cloudfront.net/55747420/05.pdf?1518086787=&response-content-disposition=inline%3B+filename%3DHARDWARE_DESIGN_FOR_MACHINE_LEARNING.pdf&Expires=1612707416&Signature=N5TS2i9UQI3Fhy6DGl4NaehUjUX7~qhRoG0aBDDSS7~Kjg-tsyMunPZuJt9KvpyDUlgmjEDcvkUjNgcoAuayhUK1WBBeSOFkyy-AEkVnxBrFX7CBiPUqKJ3KMyCcH8~KKtsiJNgq9eu2id8v-g2kmdaLvNnkkHcauh61XUBdfF7OiPjOFx~DXUZj3Kr4psqWfcUAWVBEAJixy3kRfiVycE4l4B3XbLwzOu~1qRNe87g-2ETs8Tao9RKH-nkI3fwdh1~Ja6wXuYRcdOzonL1z9muy33~YxZTG2ZP8aEyYiZOx1klPtaB7jnaEI5wSvZDF9nQ0u-HM4LySgAlO3qhypA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
 
 [
 Wie wird HW schneller:
