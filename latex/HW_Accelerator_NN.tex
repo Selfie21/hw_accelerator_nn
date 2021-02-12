@@ -74,11 +74,21 @@ FPGAs are limited by their flexibility compared to GPUs, with the different Logi
 \\
 There are many different approaches of how to achieve efficient processing of Neural Networks with FPGAs. A vivid approach can be seen by Nurvitadhi et al. \cite{nurvitadhi2016accelerating} using Recurrent Neural Networks (Neural Networks that contain recurrent connections) for the inference phase. The FPGA is composed of a memory read unit, memory write unit and gatherings of multiple floating-point multiply-accumulate units (FMA). To accelerate matrix vector multiplications the matrix is first divided into column blocks. One FMA is assigned one column block to work on, mutiplying the elements of the input vector to the specified column. Since the unit only takes care of one column this can be done in place. Afterwards the result is given to a reduction unit, which adds the results of 2 column blocks for the concluding result.
 
+~insert picture FMA Unit, insert Section Microsoft FPGA
 % insert picture FMA Unit.
 
 \section{ASIC}
+An Application-specific integrated circuit (ASIC) shares many similiarities with a FPGA. The most notable difference is that while FPGAs can be reprogrammed after production, that is not the case for ASICs. They are however more efficient and provide more functionality. 
+
+~insert Section Google TPU.
+ 
+
+\section{Edge Devices}
 
 \section{Comparison Accelerators}
+
+
+\section{Conclusion}
 
 \newpage
 \quad
