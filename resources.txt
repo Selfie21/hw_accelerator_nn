@@ -40,13 +40,12 @@ o17- Design HW Accelerator: https://www.cs.utah.edu/~rajeev/pubs/ali-thesis.pdf
 o18- Google Summary: https://www.heise.de/newsticker/meldung/Kuenstliche-Intelligenz-Architektur-und-Performance-von-Googles-KI-Chip-TPU-3676312.html
 o19- Training AI used NVIDIA: https://www.forbes.com/sites/moorinsights/2017/03/03/a-machine-learning-landscape-where-amd-intel-nvidia-qualcomm-and-xilinx-ai-engines-live/?sh=51f4c788742f
 o20- Most used GPU for Training: https://www.wired.com/2016/10/ai-changing-market-computer-chips/
-
-
+o21- TPU Critisim https://www.reddit.com/r/hardware/comments/i060ip/google_announces_tpuv4_with_27x_speedup_over_tpuv3/
+o22- ASICS compare https://www.forbes.com/sites/tiriasresearch/2020/07/30/nvidia-trounces-google-and-huawei-in-ai-benchmarks-startups-nowhere-to-be-found/?sh=2f4d563230fe
+o23- ASICS compare https://cacm.acm.org/magazines/2018/9/230571-a-domain-specific-architecture-for-deep-neural-networks/fulltext	
+o24- Google TPU https://cloud.google.com/tpu/docs/tpus?hl=de
+p25- MLPerf https://mlcommons.org/en/
 Pictures:
 Google TPU v3: https://cloud.google.com/tpu/
 
-
-Fragen Google Biased Paper selber geschrieben?
-Sources von Sources verwenden?
-
-
+disingenuous
