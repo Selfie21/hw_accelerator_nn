@@ -30,23 +30,17 @@ Wie wird HW schneller:
 ]
 
 General:
-o11- Difference AI: https://www.ibm.com/cloud/blog/ai-vs-machine-learning-vs-deep-learning-vs-neural-networks
 o12- FPGAs ALL stuff: https://arxiv.org/pdf/1712.08934.pdf
 o13- Performance 760 GOP/s https://www.researchgate.net/publication/333158297_High-Performance_FPGA-Based_CNN_Accelerator_With_Block-Floating-Point_Arithmetic
 o14- Rise of Neural Networks Computer Power: Aggarwal, Charu C. "Neural networks and deep learning." Springer 10 (2018): 978-3. P.7
 o15- TPU v3 Stats on Google: 420 Teraflops,  https://arxiv.org/pdf/1907.10701.pdf, https://cloud.google.com/tpu/docs/system-architecture
-o16- Alpha Go used TPU: https://www.nature.com/articles/nature24270?sf123103138=1
 o17- Design HW Accelerator: https://www.cs.utah.edu/~rajeev/pubs/ali-thesis.pdf
-o18- Google Summary: https://www.heise.de/newsticker/meldung/Kuenstliche-Intelligenz-Architektur-und-Performance-von-Googles-KI-Chip-TPU-3676312.html
 o19- Training AI used NVIDIA: https://www.forbes.com/sites/moorinsights/2017/03/03/a-machine-learning-landscape-where-amd-intel-nvidia-qualcomm-and-xilinx-ai-engines-live/?sh=51f4c788742f
 o20- Most used GPU for Training: https://www.wired.com/2016/10/ai-changing-market-computer-chips/
-o21- TPU Critisim https://www.reddit.com/r/hardware/comments/i060ip/google_announces_tpuv4_with_27x_speedup_over_tpuv3/
 o22- ASICS compare https://www.forbes.com/sites/tiriasresearch/2020/07/30/nvidia-trounces-google-and-huawei-in-ai-benchmarks-startups-nowhere-to-be-found/?sh=2f4d563230fe	
-o24- Google TPU https://cloud.google.com/tpu/docs/tpus?hl=de
 o25- MLPerf https://mlcommons.org/en/
 o26- Weeks to traing: https://arxiv.org/pdf/1608.06902.pdf
-Pictures:
-Google TPU v3: https://cloud.google.com/tpu/
+o27- IoT Devices https://arxiv.org/pdf/1907.08349.pdf
+
 
 Systolic Array Question?
-disingenuous

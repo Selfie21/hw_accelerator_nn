@@ -66,6 +66,7 @@ The Graphics Processing Unit (GPU) is a piece of specialised Hardware originally
 Through this structure high memory throughput and good Execution of parallel instructions is given. Nvidia ,one of the leaders in manufactoring, is implementing the their specialised Deep Learning Units with normal cores plus additional Tensor cores \cite{nvidiav100}. Tensor Cores essentiely multiply 2 FP-16 Matrix (Floating Point 16 bit) and being able to add a third Matrix all in a single operation, performing 64 operations per clock \cite{tensorcores}. Their newest product the Nvidia A100 uses the third generation of tensor cores with better precision.
 Another way GPUs accelerate is by making use of the sparsity of matrices used for calculating the different functions, more on that later.
 GPUs can be seen as the most used hardware option for neural networks for general scientific usage \cite{mostusedgpu}. They are mostly used for training, but can also be used for the inference phase because of their flexible hardware structure \cite{capra2020updated}. They are specifically fast in training due to their ability to work through large amounts of data quickly (having a high memory bandwidth).
+\\
 
 \section{Field-programmable Gate Array}
 A Field-programmable Gate Array (FPGA) is an integrated circuit, which can be programmed by the customer after delivery. The concept of a unit can be configured by using Hardware Description Language (HDL). FPGAs contain logic blocks which in the process can be altered by the HDL. The logic blocks can be configured to execute complex functions or simple logical operations. FPGAs are also used as prototypes for ASICs, since their time to develop is much lower than ASICs. A big Problem for researchers working on FPGAs is the hardware-specific knowledge needed for reprogramming them after receiving the product. In recent years however a shift towards a more software-close programming can be seen. Despite the shift, writing code is can still be a challenge, because the code written for software is fundamentally different than that written for FPGAs. This also opens the door for researchers on neural networks to speed up the training and inference phase for neural networks, since working with a flexible and user-friendly framework is of advantage. The major manufacturers are Xilinix (owned by AMD) and Altera (owned by Intel) \cite{majorfpga}.
@@ -90,12 +91,34 @@ The Buffers allow together with the Network-On-Chip to distribute data across th
 \section{ASIC}
 An Application-specific integrated circuit (ASIC) shares many similiarities with a FPGA. The most notable difference is that while FPGAs can be reprogrammed after production, that is not the case for ASICs. They are however more efficient perfecting the hardware-specific advantages of FPGAs.
 \\
-Google started working on an own custom ASIC, after observing that only a 3 minutes of speech search (using Neural Networks) would double their computational capacity \cite{jouppi2017datacenter}. Making this the use-case the Hardware was therefore built specifically for the inference phase. The work became the Tensor Processing Unit (TPU). The main components of the first version included a Matrix Multiply Unit (MMU), a Unified Buffer and Accumulators. The Matrix Multiplay Unit contains 256x256 multiplier-accumulators (MACs), which perform 8-bit operations, whose results are stored in Accumulators. Many scientific works have shown that during the inference phase lower numerical precision (lower than the usual 32-bit floating point) can be used to achieve faster training times without loss of accuracy\cite{rodriguez2018lower}. This makes the Matrix Multiply Unit a good tool to process the data coming through the layers. Since the TPU is only used for inference Google implemented a Weight FIFO, which is read-only and makes accessing the weights needed in the MMU fast. The transitional results are at the end stored in the Unified Buffer. For faster processing a systolic array was used, which reduces read and write operations. Another way the hardware accelerates is by using 4-stage pipeline parallelism.
+Google started working on an own custom ASIC, after observing that only a 3 minutes of speech search (using Neural Networks) would double their computational capacity \cite{jouppi2017datacenter}. Making this the use-case the Hardware was therefore built specifically for the inference phase. The work became the Tensor Processing Unit (TPU). The main components of the first version included a Matrix Multiply Unit (MMU), a Unified Buffer and Accumulators. The Matrix Multiplay Unit contains 256x256 multiplier-accumulators (MACs), which perform 8-bit operations, whose results are stored in Accumulators. Many scientific works have shown that during the inference phase lower numerical precision (lower than the usual 32-bit floating point) can be used to achieve faster training times without loss of accuracy\cite{rodriguez2018lower}. This makes the Matrix Multiply Unit a good tool to process the data coming through the layers. Since the TPU is only used for inference Google implemented a Weight FIFO, which is read-only and makes accessing the weights needed in the MMU fast. The transitional results are at the end stored in the Unified Buffer. For faster processing a systolic array was used, which reduces read and write operations. 
+%TODO: Short explanation Systolic ARRAY 
+Another way the hardware accelerates is by using a 4-stage pipeline parallelism.
+\begin{figure}[h]
+	\caption{A simplfied Block Diagram of the first version TPU. The left side represents the host (CPU). The host sends instructions to the TPU and receives a data back \cite{jouppi2017datacenter}.}
+	\centering
+	\includegraphics[width=\linewidth]{pictures/tpu_floorplan.png}
+\end{figure}
+The release of the second version focused mostly on higher memory bandwith and even faster processing, containing two Matrix Execution Units \cite{secondversiontpu}. The second version was now also able to support traing models. Another addition were the so called TPU Pods, which are essentially mutiple TPU devices connected together. In a TPU Pods the units are connected in such a way that the workload between the different devices can be split up autonomously, meaning without the help of a host CPU.
+The third version improved similiar aspects as its predecessor, having four Matrix Execution Units \cite{thirdversiontpu}. Google has announced that it is working on bringing out a fourth version of their TPU, claiming to be 2.7x faster than their third version \cite{fourthversiontpu}.
+\newpage
+
+\section{Hardware Accelerators in Edge Devices}
+Although it's not directly a specific type of Hardware, Hardware Accelerators in Edge Devices play a key role in bringing the services of Neural Networks to the application. The Application to Neural Networks is, as mentioned in the Introduction, manifold. Many Applications need fast response times (f.e. autonomous driving) or are not have no connectivity to the cloud (f.e. mining in rural areas) and can not rely on cloud computing solutions. This results in the need for the computation to happen right at the source resulting in the need for Hardware Accelerators in Edge Devices.
 \\
-The TPU V2 and V3 mainly improved 
-\section{Edge Devices}
+This section will give an overview over some of the use cases of Edge Devices.
+%%Siemens NPU
+%%Chip Image Processing CPU
+%%Mining Operations
+
 
 \section{Comparison Accelerators}
+%% Usage Scientific
+%% Computational Comparison
+
+
+
+
 
 
 \section{Conclusion}
