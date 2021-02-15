@@ -17,7 +17,7 @@ o1~ History FPGAS: https://arxiv.org/pdf/1602.04283.pdf
 o2~ Comparison Hardware Accelerators: https://www.mdpi.com/1999-5903/12/7/113/pdf
 o3~ Performance analysis Google TPU: https://dl.acm.org/doi/pdf/10.1145/3079856.3080246
 o4~ Microsoft FPGAS: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supplemental/15%20DCNN%20hardware.pdf
-o5~ Comparison GPUS, CPUS, ASICs and FPGA: https://ieeexplore.ieee.org/document/7577314/)
+o5~ Comparison GPUS, CPUS, ASICs and FPGA: https://ieeexplore.ieee.org/document/7577314/
 o6~ Survey GPU, CPU, ASICs, TPU: https://www.researchgate.net/publication/334647302_A_Survey_on_Specialised_Hardware_for_Machine_Learning
 o7~ Percentage Usage All Categories: https://link.springer.com/article/10.1007/s11227-020-03325-8
 o8~ Other: https://d1wqtxts1xzle7.cloudfront.net/55747420/05.pdf?1518086787=&response-content-disposition=inline%3B+filename%3DHARDWARE_DESIGN_FOR_MACHINE_LEARNING.pdf&Expires=1612707416&Signature=N5TS2i9UQI3Fhy6DGl4NaehUjUX7~qhRoG0aBDDSS7~Kjg-tsyMunPZuJt9KvpyDUlgmjEDcvkUjNgcoAuayhUK1WBBeSOFkyy-AEkVnxBrFX7CBiPUqKJ3KMyCcH8~KKtsiJNgq9eu2id8v-g2kmdaLvNnkkHcauh61XUBdfF7OiPjOFx~DXUZj3Kr4psqWfcUAWVBEAJixy3kRfiVycE4l4B3XbLwzOu~1qRNe87g-2ETs8Tao9RKH-nkI3fwdh1~Ja6wXuYRcdOzonL1z9muy33~YxZTG2ZP8aEyYiZOx1klPtaB7jnaEI5wSvZDF9nQ0u-HM4LySgAlO3qhypA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
@@ -41,11 +41,12 @@ o18- Google Summary: https://www.heise.de/newsticker/meldung/Kuenstliche-Intelli
 o19- Training AI used NVIDIA: https://www.forbes.com/sites/moorinsights/2017/03/03/a-machine-learning-landscape-where-amd-intel-nvidia-qualcomm-and-xilinx-ai-engines-live/?sh=51f4c788742f
 o20- Most used GPU for Training: https://www.wired.com/2016/10/ai-changing-market-computer-chips/
 o21- TPU Critisim https://www.reddit.com/r/hardware/comments/i060ip/google_announces_tpuv4_with_27x_speedup_over_tpuv3/
-o22- ASICS compare https://www.forbes.com/sites/tiriasresearch/2020/07/30/nvidia-trounces-google-and-huawei-in-ai-benchmarks-startups-nowhere-to-be-found/?sh=2f4d563230fe
-o23- ASICS compare https://cacm.acm.org/magazines/2018/9/230571-a-domain-specific-architecture-for-deep-neural-networks/fulltext	
+o22- ASICS compare https://www.forbes.com/sites/tiriasresearch/2020/07/30/nvidia-trounces-google-and-huawei-in-ai-benchmarks-startups-nowhere-to-be-found/?sh=2f4d563230fe	
 o24- Google TPU https://cloud.google.com/tpu/docs/tpus?hl=de
-p25- MLPerf https://mlcommons.org/en/
+o25- MLPerf https://mlcommons.org/en/
+o26- Weeks to traing: https://arxiv.org/pdf/1608.06902.pdf
 Pictures:
 Google TPU v3: https://cloud.google.com/tpu/
 
+Systolic Array Question?
 disingenuous
