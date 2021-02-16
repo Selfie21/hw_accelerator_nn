@@ -1,32 +1,17 @@
-Idee Struktur:
-
-~(Ganz kurz) Was sind Hardware Beschleuniger. Custom Designed ASICs. Aktuelles Thema, viel Forschung.
-~Was machen HW Beschleuniger im Bereich NN anders im Vergleich zu "normaler" Hardware bspw. guter Durchsatz 8-bit Arithmetik, optimisierte Speichernutzung, ...
-~(GPUs ähnlichkeiten zu HW Beschleunigern für Neuronale Netze -> HW Beschleuniger bis zu Faktor 10 schneller)
-~Vergleich:
-	- Google TPU Tensor Processing Units, Edge TPU -> gedacht für Edge Computing
-		-> auf Tensorflow Software eingehen (obwohl nicht genaues Thema), da speziell für Tensorflow gemacht.
-	- Amazon, Intel, IBM
-	- andere Typen?
-~Outlook, neuere Methoden usw.
-
-
-
 Wichtige Paper:
 o1~ History FPGAS: https://arxiv.org/pdf/1602.04283.pdf
-o2~ Comparison Hardware Accelerators: https://www.mdpi.com/1999-5903/12/7/113/pdf
+xo2~ Comparison Hardware Accelerators: https://www.mdpi.com/1999-5903/12/7/113/pdf
 o3~ Performance analysis Google TPU: https://dl.acm.org/doi/pdf/10.1145/3079856.3080246
 o4~ Microsoft FPGAS: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supplemental/15%20DCNN%20hardware.pdf
 o5~ Comparison GPUS, CPUS, ASICs and FPGA: https://ieeexplore.ieee.org/document/7577314/
-o6~ Survey GPU, CPU, ASICs, TPU: https://www.researchgate.net/publication/334647302_A_Survey_on_Specialised_Hardware_for_Machine_Learning
-o7~ Percentage Usage All Categories: https://link.springer.com/article/10.1007/s11227-020-03325-8
-o8~ Other: https://d1wqtxts1xzle7.cloudfront.net/55747420/05.pdf?1518086787=&response-content-disposition=inline%3B+filename%3DHARDWARE_DESIGN_FOR_MACHINE_LEARNING.pdf&Expires=1612707416&Signature=N5TS2i9UQI3Fhy6DGl4NaehUjUX7~qhRoG0aBDDSS7~Kjg-tsyMunPZuJt9KvpyDUlgmjEDcvkUjNgcoAuayhUK1WBBeSOFkyy-AEkVnxBrFX7CBiPUqKJ3KMyCcH8~KKtsiJNgq9eu2id8v-g2kmdaLvNnkkHcauh61XUBdfF7OiPjOFx~DXUZj3Kr4psqWfcUAWVBEAJixy3kRfiVycE4l4B3XbLwzOu~1qRNe87g-2ETs8Tao9RKH-nkI3fwdh1~Ja6wXuYRcdOzonL1z9muy33~YxZTG2ZP8aEyYiZOx1klPtaB7jnaEI5wSvZDF9nQ0u-HM4LySgAlO3qhypA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
+xo7~ Percentage Usage All Categories: https://link.springer.com/article/10.1007/s11227-020-03325-8
+xo8~ Other: https://scholar.google.com/scholar?hl=de&as_sdt=0%2C5&q=Hardware+Design+for+machine+learning&oq=Hardware+
+o9-Maybe (detailed) Efficient Processing of Deep Neural Networks: https://ieeexplore.ieee.org/document/8114708
 
 [
 Wie wird HW schneller:
-7-Limited Numerical Precision: http://proceedings.mlr.press/v37/gupta15.pdf
-8-In-Memory Computation: https://arxiv.org/pdf/1706.00511.pdf
-9-Efficient Processing of Deep Neural Networks: https://ieeexplore.ieee.org/document/8114708
+10-Limited Numerical Precision: http://proceedings.mlr.press/v37/gupta15.pdf
+11-In-Memory Computation: https://arxiv.org/pdf/1706.00511.pdf
 ]
 
 General:
@@ -34,13 +19,21 @@ o12- FPGAs ALL stuff: https://arxiv.org/pdf/1712.08934.pdf
 o13- Performance 760 GOP/s https://www.researchgate.net/publication/333158297_High-Performance_FPGA-Based_CNN_Accelerator_With_Block-Floating-Point_Arithmetic
 o14- Rise of Neural Networks Computer Power: Aggarwal, Charu C. "Neural networks and deep learning." Springer 10 (2018): 978-3. P.7
 o15- TPU v3 Stats on Google: 420 Teraflops,  https://arxiv.org/pdf/1907.10701.pdf, https://cloud.google.com/tpu/docs/system-architecture
-o17- Design HW Accelerator: https://www.cs.utah.edu/~rajeev/pubs/ali-thesis.pdf
-o19- Training AI used NVIDIA: https://www.forbes.com/sites/moorinsights/2017/03/03/a-machine-learning-landscape-where-amd-intel-nvidia-qualcomm-and-xilinx-ai-engines-live/?sh=51f4c788742f
-o20- Most used GPU for Training: https://www.wired.com/2016/10/ai-changing-market-computer-chips/
-o22- ASICS compare https://www.forbes.com/sites/tiriasresearch/2020/07/30/nvidia-trounces-google-and-huawei-in-ai-benchmarks-startups-nowhere-to-be-found/?sh=2f4d563230fe	
-o25- MLPerf https://mlcommons.org/en/
-o26- Weeks to traing: https://arxiv.org/pdf/1608.06902.pdf
-o27- IoT Devices https://arxiv.org/pdf/1907.08349.pdf
+o16- Design HW Accelerator: https://www.cs.utah.edu/~rajeev/pubs/ali-thesis.pdf
+o17- Training AI used NVIDIA: https://www.forbes.com/sites/moorinsights/2017/03/03/a-machine-learning-landscape-where-amd-intel-nvidia-qualcomm-and-xilinx-ai-engines-live/?sh=51f4c788742f
+o18- Most used GPU for Training: https://www.wired.com/2016/10/ai-changing-market-computer-chips/
+o19- ASICS compare https://www.forbes.com/sites/tiriasresearch/2020/07/30/nvidia-trounces-google-and-huawei-in-ai-benchmarks-startups-nowhere-to-be-found/?sh=2f4d563230fe	
+o20- MLPerf https://mlcommons.org/en/
+o21- IoT Devices https://arxiv.org/pdf/1907.08349.pdf
 
+
+https://dl.acm.org/doi/pdf/10.1145/3358700
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6402898
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8573476
+https://www.nvidia.com/de-de/data-center/mlperf/
+https://medium.com/@ODSC/what-is-mlperf-bf24ee72c309
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9001257
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8114708
+https://arxiv.org/pdf/1907.08349.pdf
 
 Systolic Array Question?
