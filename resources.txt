@@ -6,7 +6,7 @@ o4~ Microsoft FPGAS: https://web.eic.nctu.edu.tw/lpsoc/courses/MS2017Spring/supp
 o5~ Comparison GPUS, CPUS, ASICs and FPGA: https://ieeexplore.ieee.org/document/7577314/
 xo7~ Percentage Usage All Categories: https://link.springer.com/article/10.1007/s11227-020-03325-8
 xo8~ Other: https://scholar.google.com/scholar?hl=de&as_sdt=0%2C5&q=Hardware+Design+for+machine+learning&oq=Hardware+
-o9-Maybe (detailed) Efficient Processing of Deep Neural Networks: https://ieeexplore.ieee.org/document/8114708
+o9-Maybe (detailed) Efficient Processing of Deep Neural Networks (most used Cloud): https://ieeexplore.ieee.org/document/8114708
 
 [
 Wie wird HW schneller:
@@ -25,15 +25,8 @@ o18- Most used GPU for Training: https://www.wired.com/2016/10/ai-changing-marke
 o19- ASICS compare https://www.forbes.com/sites/tiriasresearch/2020/07/30/nvidia-trounces-google-and-huawei-in-ai-benchmarks-startups-nowhere-to-be-found/?sh=2f4d563230fe	
 o20- MLPerf https://mlcommons.org/en/
 o21- IoT Devices https://arxiv.org/pdf/1907.08349.pdf
-
-
-https://dl.acm.org/doi/pdf/10.1145/3358700
-https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6402898
-https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8573476
-https://www.nvidia.com/de-de/data-center/mlperf/
-https://medium.com/@ODSC/what-is-mlperf-bf24ee72c309
-https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9001257
-https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8114708
-https://arxiv.org/pdf/1907.08349.pdf
+o22- MlPerf https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9001257s
 
 Systolic Array Question?
+Hyperlinks im PDF rausmachen?
+Nicht so sehr ins Technische Detail gegangen.

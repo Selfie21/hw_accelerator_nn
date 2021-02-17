@@ -108,24 +108,27 @@ Since the release of the first version Google released two newer versions and al
 \end{itemize}
 
 \section{Comparison Accelerators}
-The Comparison between ASICs, FPGAs and GPUs will be divided into two main aspects: firstly a general comparison between the different Accelerators regarding often used measures and secondly an insight into the current research regarding Hardware Accelerators for Neural Networks.
+The Comparison between ASICs, FPGAs and GPUs will be divided into two main aspects: firstly a general comparison between the different Accelerators regarding often used measures and secondly an insight into the current research regarding Hardware Accelerators for Neural Networks. The Comparison will predominantly focus on the Hardware used in Datacenters.
 \\
-The main metrics to measure Hardware Accelerators are Performance, Energy Efficiency and Cost.
-Performance:
-The Performance (often also called the Throughput) determines how often the Hardware performs a complete Convoltion / a complete inference is performed on the hardware. Most of the times this metric is measured in billions of operations per second (GOP/s). Other alternatives include billions of Macs per second (GMAC/s) or the amount of inferences achieved (e.g. when talking about image classification the Hardware classified x images / second). 
+The main metrics to measure Hardware Accelerators are Performance, Energy Efficiency and Memory Bandwith.
+\\
 
-Energy Efficiency:
+\textbf{Performance}:
+The Performance (often also called the Throughput) determines how often the Hardware performs a complete Convoltion / a complete inference is performed on the hardware. Most of the times this metric is measured in billions of operations per second (GOP/s). Other alternatives include billions of Macs per second (GMAC/s) or the amount of inferences achieved (e.g. when talking about image classification the Hardware classified x images / second). While looking at training times the Performance is often 
+
+\textbf{Energy Efficiency}:
 The Energy Efficiency is the Power the unit bestows put in ration with the Performance. This an important unit for edge devices, as power is often a limited source for these devices.
 
-Cost: The Cost 
-
+\textbf{Memory Bandwith} is simply the rate at which the hardware can read/write data.
 The Accuracy is also a metric cited, but it will not be discussed since the software is the contributing factor for this.
-
+\\
+\\
 Measuring these standard metrics on different Hardware Accelerators can be challenging \cite{capra2020updated}. Most of the scientific work is presented only on the target application, making good benchmarking between different Accelerators hard. Results of Benchmarks with different Neural Networks or different data can't be compared reasonably.
+There are different scientific works that are dedicated to creating frameworks for benchmarking Hardware Accelerators \cite{chen2012benchnn} \cite{zhu2018benchmarking} \cite{blott2019qutibench} \cite{dong2017dnnmark}. The most accredited is MLPerf, which calims to be the industry standard for measuring the Performance of Hardware Accelerators for Neural Networks\cite{mattson2020mlperf}. It was founded in 2018 and is being worked on by both members of science and industry, including Google, NVIDIA, Harvard University and Stanford University to name a few. The specific implementation of the MLPerf Framework would overreach the premise of this paper, as such I will focus on the results. 
+%include table results A100, TPU etc.
+NVIDIA had 85% of the submission, which include a lot of different Variants of their A100 GPU and others \cite{mlperfresults}. The NVIDIA A100 performs the best for both training and inference phase Per-Accelerator. Google has the Max Scale Record with 4096 units of their TPUv3. In comparison the latest version Intel Processor takes x times the amount of .
+A metric that isn't represented in the MLPerf Benchmark is the Energy Efficiency. Here FPGAs seem to have an advantage thanks to their efficient pathing of data and operating. In scientific research, aswell as the Benchmark QuTiBench referenced earlier, FPGAs have a better Performance/Power, in some cases up to 10x better than GPUs..
 
-
-
-%% Computational Comparison
 %% Usage Scientific
 
 \section{Hardware Accelerators in Edge Devices}
