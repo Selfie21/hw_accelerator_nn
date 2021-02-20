@@ -26,7 +26,3 @@ o19- ASICS compare https://www.forbes.com/sites/tiriasresearch/2020/07/30/nvidia
 o20- MLPerf https://mlcommons.org/en/
 o21- IoT Devices https://arxiv.org/pdf/1907.08349.pdf
 o22- MlPerf https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9001257s
-
-Systolic Array Question?
-Hyperlinks im PDF rausmachen?
-Nicht so sehr ins Technische Detail gegangen.
