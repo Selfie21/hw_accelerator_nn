@@ -1,22 +1,13 @@
-%% Beispiel-Präsentation
-\documentclass{sdqbeamer} 
- 
-%% Titelbild
+\documentclass[en]{sdqbeamer} 
+
 \titleimage{banner_2020_kit}
+\groupname{Research group for heterogeneous and parallel computing }
 
-%% Gruppenlogo
-%\grouplogo{mylogo} 
 
-%% Gruppenname
-\groupname{Abteilungs-, KIT-Fakultäts-, Institutsbezeichnung}
+\title[Hardware Accelerators for Neural Networks]{A Survey on Hardware Accelerators for Neural Networks}
+\author[Pierre Brosemer]{Pierre Brosemer}
 
-% Beginn der Präsentation
-
-\title[KIT-Beamer-Vorlage]{Präsentation mit \LaTeX{} Beamer im KIT-Design}
-\subtitle{entsprechend den Gestaltungsrichtlinien vom 1. August 2020} 
-\author[Erik Burger]{Dr.-Ing. Erik Burger}
-
-\date[8.\,12.\,2020]{8. Dezember 2020}
+\date[23.\,03.\,2020]{23. March 2020}
 
 % Literatur 
  
@@ -30,9 +21,36 @@
 \KITtitleframe
 
 %Inhaltsverzeichnis
-\begin{frame}{Inhaltsverzeichnis}
+\begin{frame}{Table of contents}
 \tableofcontents
 \end{frame}
+
+\section{Fundamentals neural networks}
+\begin{frame}{Neural Networks}
+	A typical representation of a neural network.
+\end{frame}
+
+\begin{frame}{Different phases of Neural Networks}
+	Training phase, inference phase.
+\end{frame}
+
+\section{Different types of hardware}
+\begin{frame}{Main types}
+	\begin{itemize}
+		\item CPU
+		\item GPU
+		\item FPGA
+		\item ASIC
+	\end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+
 
 \section{Erster Abschnitt}
 
@@ -273,9 +291,6 @@
 	\colorbox{kit-cyan5}{kit-cyan5}
 		
 \end{frame}
-%% ----------------------------------------
-%% | /Test-Folie mit definierten Farben |
-%% ----------------------------------------
 \backupend
 
 \end{document}
