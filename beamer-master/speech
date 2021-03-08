@@ -1,0 +1,15 @@
+Intro 1:
+To understand how the Hardware helps accelerating, first understand principles.
+Explain Picture Neural Network Nodes, Weights, Input, Output. 
+Different Nodes in each layer. Weighted function if above threshhold node activated. Changing weights learning simulated.
+
+Intro 2:
+Picture difference inference and training phase. 
+Training phase input data compare with real data. Large Datasets needed. 
+More computational power needed. Billions of multiplications in a single network one propagation.
+Matrix-vector products large margin of computation.
+
+Different 3:
+
+
+
