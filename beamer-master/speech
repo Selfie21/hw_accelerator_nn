@@ -1,15 +1,40 @@
-Intro 1:
+Intro 3:
 To understand how the Hardware helps accelerating, first understand principles.
-Explain Picture Neural Network Nodes, Weights, Input, Output. 
+Explain Picture Neural Network Nodes, Weights, Input, Output. Generally deep if more than 3 layers.
 Different Nodes in each layer. Weighted function if above threshhold node activated. Changing weights learning simulated.
 
-Intro 2:
+Intro 4:
 Picture difference inference and training phase. 
-Training phase input data compare with real data. Large Datasets needed. 
-More computational power needed. Billions of multiplications in a single network one propagation.
-Matrix-vector products large margin of computation.
+Training phase input data compare with real data. Large Datasets needed. More power needed.
+More computational power needed. Billions of multiply and accumulate operations in a single network for one propagation.
+Matrix-vector products large margin of computation.  Good Parallelization needed.
 
-Different 3:
+Different 5:
+Focus on. Explain each of them.
+Divide into subcategories. 
+Temporal architecture CPU GPU: one central control system many different ALUs. Only communicate with memory.
+Spatial architecture FPGA ASIC: ALUs are connected together to form a network can have their own local memory.
 
+CPU 6:
+can't make use of fine-grained parallelization -> underutilization.
+CPU can be seen as the base -> no accelerator.
+
+GPU 7:
+originally meant for rendering images for computer applications name.
+up to thousands of cores each with individual caches to store computation. -> align with graphic
+NVIDIA A100 6912 Cores
+
+GPU 8:
+NVIDIA A100 Specialised for Neural Networks Tensor Cores. Multiply 2 FP-16 Matrices and add a third in one clock. 64 Operations per Clock.
+Sparsity Compressed Sparse Row, Compressed Sparse Column. Acceleration by factor 2 for Tensor Cores.
+
+FPGA 9:
+Field Programmable Gate Array. Can be reprogrammed after production.
+Logic blocks that can be configured for different simple or complicated logical functions.
+Hardware-specific knowledge needed. Software Python, C.
+in the sense that fpga need reconfiguration for specific tasks.
+Ability to pipeline parallelize and on-chip memory.
+
+FPGA 10: 
 
 
