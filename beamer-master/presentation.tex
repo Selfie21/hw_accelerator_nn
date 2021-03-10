@@ -4,9 +4,10 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage[export]{adjustbox}
-\usepackage[citestyle=authoryear,bibstyle=numeric,hyperref,backend=biber]{biblatex}
-\addbibresource{./latex/References.bib}
+\usepackage[citestyle=numeric, bibstyle=numeric, backend=biber]{biblatex}
+\addbibresource{../latex/References.bib}
 \bibhang1em
+\setbeamertemplate{bibliography item}{\insertbiblabel}
 
 \newenvironment{rcases}
 {\left.\begin{aligned}}
@@ -98,6 +99,7 @@ Four main types:
 	\begin{minipage}{0.45\paperwidth}
 		\begin{figure}
 			\includegraphics[width= 0.47\paperwidth, right]{pictures/intel_comparison.png}
+			\caption{Layout differences between CPU and GPU \cite{intelpic_comparison}}
 		\end{figure}
 	\end{minipage}
 \end{frame}
@@ -123,6 +125,37 @@ Four main types:
 	\end{itemize}
 \end{frame}
 
+\begin{frame}{Example speedup for a FPGA}
+	Accelerating operation for recurrent neural networks \cite{nurvitadhi2016accelerating}:
+	\begin{itemize}
+		\item matrix divided into column blocks
+		\item multiple FMA units
+		\item each FMA unit responsible for one row in column block
+		\item multiply rows to input vector
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}
+		\centering
+		\includegraphics[width= 0.55\paperwidth]{pictures/fpga_operations.png}
+		\caption{A simplified depiction showing the layout and dataflows of the previously mentioned FPGA \cite{nurvitadhi2016accelerating}}
+	\end{figure}
+\end{frame}
+
+%Maybe Microsoft if enough Time
+
+\subsection{ASIC}
+\begin{frame}{Application-Specific Integrated Circuit}
+	General Properties:
+	\begin{itemize}
+		\item integrated circuit
+		\item can't be reprogrammed after production
+		\item time-consuming and complicated process of design
+		\item more energy-efficient than FPGAs
+	\end{itemize}
+\end{frame}
+
 \begin{frame}
 	
 \end{frame}
@@ -130,11 +163,7 @@ Four main types:
 \appendix
 \beginbackup
 
-\begin{frame}{Literatur}
-	\begin{exampleblock}{Backup-Teil}
-		Folien, die nach \texttt{\textbackslash beginbackup} eingefügt werden, zählen nicht in die Gesamtzahl der Folien.
-	\end{exampleblock}
-	
+\begin{frame}{References}
 	\printbibliography
 \end{frame}
 

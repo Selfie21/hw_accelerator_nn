@@ -36,5 +36,19 @@ in the sense that fpga need reconfiguration for specific tasks.
 Ability to pipeline parallelize and on-chip memory.
 
 FPGA 10: 
+Further illustrate Properties example recurrent Neural Network.
+Matrix Divided into Column Blocks. FMA Units green boxes responsible for a row in a column block.
+FMA floating-point multipy-accumulate unit.
+Multiply Row Elements from Column Block to the vector.-> In place in FMAs Accumulator
 
+FPGA 11:
+Reduce unit adds results to produce final output vector.
+Mutipled grouped to form a cluster.
+Block size determined based on available resources.
 
+ASIC 12:
+Like FPGA. Can't be reprogrammed after production.
+Designed to run the same over lifetime f.e. Bitcoin ASICs
+time consuming FPGA often used as prototypes
+
+ASIC 13:
