@@ -52,3 +52,65 @@ Designed to run the same over lifetime f.e. Bitcoin ASICs
 time consuming FPGA often used as prototypes
 
 ASIC 13:
+Most present in literature: Google TPU, developed in 2016. 
+Built by Google since they discovered that computational capacity of their datacenters would double if people used the voice search for only three minutes a day. (Which uses Neural Networks)
+
+ASIC 14:
+Picture removed control flow.
+MMU 256x256 MACs which perform 8-bit operations on integers. Results are then stored in the Accumulators.
+Wondering 8-bit: literature many successful attempts without loss of accuracy.
+Weights FIFO read-only accessing for MMU fast.
+Transitional results stored in Unified Buffer. Systolic Array.
+4-stage parallelism.
+
+Comparison 15:
+Performance: Throughput how often the hardware performs a complete convultion/inference depending on phase.
+GOP/s billions of operations, GMAC/s billions of macs, amount of inferences achieved
+Energy Efficiency: power the unit bestows put in ratio with performance
+Memory Transfer Rate: rate at which hardware can read/write data
+Hard to measure, target application different neural networks on different accelerators hard to compare
+
+Comparison 16:
+Claims to be the industry standard for performance measuring for neural networks. \\
+F.E. Google, NVIDIA, Harvard University and Stanford University.
+
+Comparison 17:
+NVIDIA had 85% of all submissions. Variant Configurations with different CPUs. HPC - regular, closed.
+Go, 50% win rate vs. checkpoint for example.
+The Closed division is intended to compare hardware platforms “apples-to-apples” and requires using the same model and optimizer as the reference implementation.
+The Open division is intended to foster faster models and optimizers and allows any ML approach that can reach the target quality.
+NVIDIA A100 performs best for training and inference per unit. Hard to measure.
+Max scale record google 4096 TPUs.
+Intel CPU 100x slower.
+
+Comparison 18:
+Published literature for hardware accelerators. Compare refers to Comparison studies.
+Although this might not be very conclusive -> insight
+FPGA good for prototyping recent rise in accesability.
+ASICS high prized.
+
+Comparison 19:
+GPU used in data centers and others.  very accessible and perform well. among the most used for Machine Learning.
+FPGAs more energy efficient
+
+Edge Devices 20:
+fast response time autonomous driving
+no connection to the cloud mining operations
+energy consumption phones.
+advantages:
+Firstly the edge devices can do more calculations on their own reducing network traffic. 
+Secondly the the computation happens in the same domain where it's needed significantly reducing response times. 
+Thirdly if the edge device can't handle a certain task it can ping the cloud for backup.
+
+Edge Devices 21:
+non-target objects
+Siemens NPU picture processing for automation.
+
+Conclusion:
+Key role bringing to application.
+suitable in enviroment crucial decision.
+Different methods optimization timeliness of topic. 
+IOT, edge devices different requirements:
+juggle networking, processing power, and energy consumption with the best performance of the neural network.
+
+
