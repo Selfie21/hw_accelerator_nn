@@ -9,13 +9,25 @@
 \addbibresource{../latex/References.bib}
 \bibhang1em
 \setbeamertemplate{bibliography item}{\insertbiblabel}
-
+	
 \newenvironment{rcases}
 {\left.\begin{aligned}}
 	{\end{aligned}\right\rbrace}
 
+%Section Title Slides
+\AtBeginSection[]{
+	\begin{frame}
+		\vfill
+		\centering
+		\begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+			\usebeamerfont{title}\insertsectionhead\par%
+		\end{beamercolorbox}
+		\vfill
+	\end{frame}
+}
+
 %Title
-\titleimage{banner_2020_kit}
+\titleimage{googlepods3}
 \groupname{Research group for heterogeneous and parallel computing }
 \title[Hardware Accelerators for Neural Networks]{A Survey on Hardware Accelerators for Neural Networks}
 \author[Pierre Brosemer]{Pierre Brosemer}
@@ -90,7 +102,7 @@
 	\subsection{GPU}
 	\begin{frame}{Graphics Processing Unit}
 		\begin{minipage}[b]{0.45\paperwidth}
-			Graphics Processing Unit
+			Working with GPUs for neural networks:
 			\begin{itemize}
 				\item specifications align with graphics rendering
 				\item hundreds of cores with individual caches
@@ -106,7 +118,7 @@
 	\end{frame}
 	
 	\begin{frame}{Acceleration by GPUs}
-		Properties of GPUs for working with neural networks\cite{nvidiav100}:
+		Acceleration done by the NVIDIA A100\cite{nvidiav100}:
 		\begin{itemize}
 			\item achieve fast matrix multiplications
 			\item make use of sparsity in matrices
@@ -143,8 +155,6 @@
 			\caption{A simplified depiction showing the layout and dataflows of the previously mentioned FPGA \cite{nurvitadhi2016accelerating}}
 		\end{figure}
 	\end{frame}
-	
-	%Maybe Microsoft if enough Time
 	
 	\subsection{ASIC}
 	\begin{frame}{Application-Specific Integrated Circuit}
@@ -235,8 +245,8 @@
 	\begin{frame}{General Comparison}
 		Other things to note:
 		\begin{itemize}
-			\item GPUs are "workhorses" for traning neural networks \cite{capra2020updated}
-			\item FPGAs more energy efficient \cite{blott2019qutibench}. Factor of up to 10x better \cite{ovtcharov2015accelerating}
+			\item GPUs are "workhorses" for training neural networks \cite{capra2020updated}
+			\item FPGAs more energy-efficient \cite{blott2019qutibench}. Factor of up to 10x better \cite{ovtcharov2015accelerating}
 		\end{itemize}
 	\end{frame}
 
@@ -255,23 +265,27 @@
 		\begin{minipage}[b]{0.45\paperwidth}
 			Optimizations include:
 			\begin{itemize}
-				\item optimize performance \cite{szegedy2015going} 
-				\item reduce search space \cite{zhang2018ffs}
+				\item optimizing performance \cite{szegedy2015going} 
+				\item reducing search space \cite{zhang2018ffs}
 			\end{itemize}
 		\end{minipage}
+		\vrule{}
 		\begin{minipage}{0.45\paperwidth}
 			\begin{figure}
-				\includegraphics[width= 0.47\paperwidth, right]{pictures/siemens_npu.png}
-				\caption{Module S7-1500 TM NPU (Neural Processing Unit) \cite{siemensnpu_pic}}
+				\centering
+				\includegraphics[width= 0.13\paperwidth]{pictures/siemens_npu.png}
+				\caption{Siemens S7-1500 TM Neural Processing Unit \cite{siemensnpu_pic}}
 			\end{figure}
 		\end{minipage}
 	\end{frame}
+
 	
+	\section{Conclusion}
 	\begin{frame}{Conclusion}
 		Main takeaways:
 		\begin{itemize}
 			\item important role in bringing neural networks to application
-			\item choosing accelerators application-specific
+			\item choosing accelerators is application-specific
 			\item ongoing research
 		\end{itemize}
 	\end{frame}
@@ -279,8 +293,16 @@
 	\appendix
 	\beginbackup
 	
-	\begin{frame}{References}
+	\begin{frame}[allowframebreaks]{References}
+		\nocite{tpu_picture}
 		\printbibliography
 	\end{frame}
+
+	\begin{frame}[plain]
+		\titlepage
+	\end{frame}
+
+
+
 	
 \end{document}
